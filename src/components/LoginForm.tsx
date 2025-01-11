@@ -23,17 +23,21 @@ export default function LoginForm() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
-        <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white">
+        <div className="text-center">
+          <h2 className="mt-6  text-3xl font-extrabold text-gray-900 dark:text-white">
             Sign in to your account
           </h2>
+          <span className="mt-2 md:text-base text-sm inline-block mr-2">
+            username : admin
+          </span>
+          <span className="md:text-base text-sm">password : admin123</span>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="rounded-md shadow-sm -space-y-px">
             <div>
-              {/* <label htmlFor="username" className="sr-only">
+              <label htmlFor="username" className="sr-only">
                 Username
-              </label> */}
+              </label>
               <input
                 id="username"
                 name="username"
